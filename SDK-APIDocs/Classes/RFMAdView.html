@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>RFMAdView Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">RFMAdSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Rubicon%20Project</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/createAdOfFrame:withCenter:withDelegate:">+ createAdOfFrame:withCenter:withDelegate:</option>
+		
+		<option value="//api/name/createAdOfFrame:withPortraitCenter:withLandscapeCenter:withDelegate:">+ createAdOfFrame:withPortraitCenter:withLandscapeCenter:withDelegate:</option>
+		
+		<option value="//api/name/createAdWithDelegate:">+ createAdWithDelegate:</option>
+		
+		<option value="//api/name/createInterstitialAdWithDelegate:">+ createInterstitialAdWithDelegate:</option>
+		
+		<option value="//api/name/mbsAdVersion">+ mbsAdVersion</option>
+		
+		<option value="//api/name/rfmSDKVersion">+ rfmSDKVersion</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/applyVerticalOffsetForiOSGreaterThan:portraitOffset:landscapeOffset:">- applyVerticalOffsetForiOSGreaterThan:portraitOffset:landscapeOffset:</option>
+		
+		<option value="//api/name/canDisplayAd">- canDisplayAd</option>
+		
+		<option value="//api/name/canDisplayCachedAd">- canDisplayCachedAd</option>
+		
+		<option value="//api/name/offsetCentersForiOS7WithPortaitOffset:andLandscapeOffset:">- offsetCentersForiOS7WithPortaitOffset:andLandscapeOffset:</option>
+		
+		<option value="//api/name/requestCachedAdWithRequestParams:">- requestCachedAdWithRequestParams:</option>
+		
+		<option value="//api/name/requestFreshAdWithRequestParams:">- requestFreshAdWithRequestParams:</option>
+		
+		<option value="//api/name/setAVAudioSessionCategory:">- setAVAudioSessionCategory:</option>
+		
+		<option value="//api/name/setRFMAdForensicsTouchGestureWithGestureRecognizer:">- setRFMAdForensicsTouchGestureWithGestureRecognizer:</option>
+		
+		<option value="//api/name/setRFMAdForensicsTouchGestureWithType:">- setRFMAdForensicsTouchGestureWithType:</option>
+		
+		<option value="//api/name/showAd">- showAd</option>
+		
+		<option value="//api/name/showCachedAd">- showCachedAd</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">RFMAdView Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>UIGestureRecognizerDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>RFMAdView.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>RFMAdView class provides the view for displaying Revv For Mobile ads.</p>
+
+<p>Use one of the create functions to create a banner or interstitial ad. We recommend to create a view once during the view controller creation and then use only the requestFreshAd method to refresh the view with new ads.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Creating a Banner Ad" name="task_Creating a Banner Ad"></a>
+						<h2 class="task-title">Creating a Banner Ad</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createAdWithDelegate:" title="createAdWithDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAdWithDelegate:">+&nbsp;createAdWithDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create and initialize an instance of RFMAdView with default size and position</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (RFMAdView *)createAdWithDelegate:(id&lt;RFMAdDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>The delegate of RFMAdView. Conforms with <a href="../Protocols/RFMAdDelegate.html">RFMAdDelegate</a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new instance of RFMAdView</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method should be used to create a 320x50 banner in the default position  (top of content view below top navigation bar)  only if the app <strong>does not support device orientation changes</strong>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/createAdOfFrame:withCenter:withDelegate:">+ createAdOfFrame:withCenter:withDelegate:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/createAdOfFrame:withPortraitCenter:withLandscapeCenter:withDelegate:">+ createAdOfFrame:withPortraitCenter:withLandscapeCenter:withDelegate:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAdOfFrame:withCenter:withDelegate:" title="createAdOfFrame:withCenter:withDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAdOfFrame:withCenter:withDelegate:">+&nbsp;createAdOfFrame:withCenter:withDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create and initialize an instance of RFMAdView with custom banner size and location</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (RFMAdView *)createAdOfFrame:(CGRect)<em>frame</em> withCenter:(CGPoint)<em>center</em> withDelegate:(id&lt;RFMAdDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>frame</code></th>
+						<td><p>Size of banner to be created</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>center</code></th>
+						<td><p>Center co-ordinates of banner, with respect to RFMAdView&rsquo;s superview.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>The delegate of RFMAdView. Conforms with <a href="../Protocols/RFMAdDelegate.html">RFMAdDelegate</a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new instance of RFMAdView</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method should be used to create a banner of custom size and placed in custom location only if the app <strong>does not support device orientation changes</strong>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/createAdWithDelegate:">+ createAdWithDelegate:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/createAdOfFrame:withPortraitCenter:withLandscapeCenter:withDelegate:">+ createAdOfFrame:withPortraitCenter:withLandscapeCenter:withDelegate:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAdOfFrame:withPortraitCenter:withLandscapeCenter:withDelegate:" title="createAdOfFrame:withPortraitCenter:withLandscapeCenter:withDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAdOfFrame:withPortraitCenter:withLandscapeCenter:withDelegate:">+&nbsp;createAdOfFrame:withPortraitCenter:withLandscapeCenter:withDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create and initialize an instance of RFMAdView with custom banner size and location</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (RFMAdView *)createAdOfFrame:(CGRect)<em>frame</em> withPortraitCenter:(CGPoint)<em>portraitCenter</em> withLandscapeCenter:(CGPoint)<em>landscapeCenter</em> withDelegate:(id&lt;RFMAdDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>frame</code></th>
+						<td><p>Size of banner to be created</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>portraitCenter</code></th>
+						<td><p>Center co-ordinates of banner in portrait mode, with respect to RFMAdView&rsquo;s superview.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>landscapeCenter</code></th>
+						<td><p>Center co-ordinates of banner in landscape mode, with respect to RFMAdView&rsquo;s superview.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>The delegate of RFMAdView. Conforms with <a href="../Protocols/RFMAdDelegate.html">RFMAdDelegate</a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new instance of RFMAdView</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method should be used to create a banner of custom size and placed in custom location only</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/createAdWithDelegate:">+ createAdWithDelegate:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/createAdOfFrame:withCenter:withDelegate:">+ createAdOfFrame:withCenter:withDelegate:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Creating an Interstitial Ad" name="task_Creating an Interstitial Ad"></a>
+						<h2 class="task-title">Creating an Interstitial Ad</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createInterstitialAdWithDelegate:" title="createInterstitialAdWithDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createInterstitialAdWithDelegate:">+&nbsp;createInterstitialAdWithDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create and initialize an instance of RFMAdView as a full screen interstitial ad</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (RFMAdView *)createInterstitialAdWithDelegate:(id&lt;RFMAdDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>The delegate of RFMAdView. Conforms with <a href="../Protocols/RFMAdDelegate.html">RFMAdDelegate</a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new instance of RFMAdView</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method should be used to create a full screen interstitial ad.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Loading an ad" name="task_Loading an ad"></a>
+						<h2 class="task-title">Loading an ad</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/requestFreshAdWithRequestParams:" title="requestFreshAdWithRequestParams:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestFreshAdWithRequestParams:">&ndash;&nbsp;requestFreshAdWithRequestParams:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request a new ad from RFM ad server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)requestFreshAdWithRequestParams:(RFMAdRequest *)<em>requestParams</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestParams</code></th>
+						<td><p>Request Parameters for this call. Instance of <a href="../Classes/RFMAdRequest.html">RFMAdRequest</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Status Boolean status code informing if the request was accepted by the SDK or not.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method to request an ad once the AdView has been created.
+You can call this several times during the view lifecycle.
+The returned status shows whether the request was accepted by the SDK.
+For example, if this method is called when the user
+is viewing the landing page of a previous ad, the SDK does not initiate
+a new ad request and instead returns BOOL “NO” as status.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/requestCachedAdWithRequestParams:">- requestCachedAdWithRequestParams:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestCachedAdWithRequestParams:" title="requestCachedAdWithRequestParams:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestCachedAdWithRequestParams:">&ndash;&nbsp;requestCachedAdWithRequestParams:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request a new cacheable ad from RFM ad server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)requestCachedAdWithRequestParams:(RFMAdRequest *)<em>requestParams</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestParams</code></th>
+						<td><p>Request Parameters for this call. Instance of <a href="../Classes/RFMAdRequest.html">RFMAdRequest</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Status Boolean status code informing if the request was accepted by the SDK or not.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method to request a <strong>cacheable</strong> ad once the AdView has been created.
+You can call this several times during the view lifecycle.
+The returned status shows whether the request was accepted by the SDK.
+For example, if this method is called when the user
+is viewing the landing page of a previous ad, the SDK does not initiate
+a new ad request and instead returns BOOL “NO” as status.</p><div class="warning"><p><strong>Warning:</strong> A cacheable ad has a two step load process. Not all
+ads supported on RFM are cacheable. Please contact your Account Manager if you
+plan on using this method.</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/requestFreshAdWithRequestParams:">- requestFreshAdWithRequestParams:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/canDisplayCachedAd" title="canDisplayCachedAd"></a>
+	<h3 class="method-title"><code><a href="#//api/name/canDisplayCachedAd">&ndash;&nbsp;canDisplayCachedAd</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if a cacheable ad is ready for display</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)canDisplayCachedAd</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Status Boolean status code informing if there is a cacheable ad ready to be displayed or not.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Use this method to check if a cached ad is ready to be displayed or not. This is an optional method to allow better control of when to display a previously cached ad instead of calling <a href="#//api/name/showCachedAd">showCachedAd</a> directly without checking for availability.</p><div class="warning"><p><strong>Warning:</strong> Applies to cacheable ads only.</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/requestCachedAdWithRequestParams:">- requestCachedAdWithRequestParams:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showCachedAd" title="showCachedAd"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showCachedAd">&ndash;&nbsp;showCachedAd</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Display a cached ad</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)showCachedAd</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Status Boolean status code informing if an ad can be displayed or not.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this method to display a previously cached ad. This method checks whether a cacheable ad can be displayed or not before attempting to display the ad.
+Calling this method will invoke <a href="../Protocols/RFMAdDelegate.html">RFMAdDelegate</a> callback didFailToDisplayAd in case of failure to display.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/requestCachedAdWithRequestParams:">- requestCachedAdWithRequestParams:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/canDisplayCachedAd">- canDisplayCachedAd</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Utility Methods" name="task_Utility Methods"></a>
+						<h2 class="task-title">Utility Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/applyVerticalOffsetForiOSGreaterThan:portraitOffset:landscapeOffset:" title="applyVerticalOffsetForiOSGreaterThan:portraitOffset:landscapeOffset:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/applyVerticalOffsetForiOSGreaterThan:portraitOffset:landscapeOffset:">&ndash;&nbsp;applyVerticalOffsetForiOSGreaterThan:portraitOffset:landscapeOffset:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adjust the placement of ad view coordinates contionally on specific OS versions</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)applyVerticalOffsetForiOSGreaterThan:(NSString *)<em>iosVersion</em> portraitOffset:(CGFloat)<em>portraitOffset</em> landscapeOffset:(CGFloat)<em>landscapeOffset</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>iosVersion</code></th>
+						<td><p>Lowest OS version that the offset should be applied to. Set iOS version to string value of numerical version . ex: @&ldquo;7.0&rdquo;.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>portraitOffset</code></th>
+						<td><p>Vertical offset to be applied on RFMAdView coordinates in portrait mode</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>landscapeOffset</code></th>
+						<td><p>Vertical offset to be applied on RFMAdView coordinates in landscape mode</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Optional method to adjust the adview placement if parent view controller cannot set the edges for extended layout to none. This API will be useful for allowing apps running OS lower than iOS7 to set their placement coordinates for iOS6 and iOS7+ without an explicit version check.
+Call this API for with the correct offset values to ensure that the adview is created at the desired coordinates.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAVAudioSessionCategory:" title="setAVAudioSessionCategory:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAVAudioSessionCategory:">&ndash;&nbsp;setAVAudioSessionCategory:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the Audio Session category for your application</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setAVAudioSessionCategory:(NSString *)<em>AVAudioSessionCategoryType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>AVAudioSessionCategoryType</code></th>
+						<td><p>Audio Session Category Type of your app</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Status Boolean status code informing whether RFM SDK was able to set the Audio Session Category.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="../Classes/RFMAdSDK.html">RFMAdSDK</a> sets Audio Category to AVAudioSessionCategoryAmbient during creation.
+Use this method if you would like to set a different Audio Session Category for the application.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rfmSDKVersion" title="rfmSDKVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rfmSDKVersion">+&nbsp;rfmSDKVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the Version number of RFM SDK in use.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)rfmSDKVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>RFM SDK Version string</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRFMAdForensicsTouchGestureWithType:" title="setRFMAdForensicsTouchGestureWithType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRFMAdForensicsTouchGestureWithType:">&ndash;&nbsp;setRFMAdForensicsTouchGestureWithType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Override the default Ad Forensics gesture with a gesture of <a href="../Constants/RFMAdForensicsTouchGesture.html">RFMAdForensicsTouchGesture</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRFMAdForensicsTouchGestureWithType:(RFMAdForensicsTouchGesture)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>The type of touch gesture to be used for Forensics reporting. See <a href="../Constants/RFMAdForensicsTouchGesture.html">RFMAdForensicsTouchGesture</a> for available types.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRFMAdForensicsTouchGestureWithGestureRecognizer:" title="setRFMAdForensicsTouchGestureWithGestureRecognizer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRFMAdForensicsTouchGestureWithGestureRecognizer:">&ndash;&nbsp;setRFMAdForensicsTouchGestureWithGestureRecognizer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Override the default Ad Forensics gesture with a custom one. Some gesture recognizers are commonly
+used in uiwebview. To avoid gesture conflicts, please avoid the following gestures for Ad Forensics:
+- tap and tap multiple times
+- swipe with one finger
+- long press
+- pinch
+- pan
+- rotation
+Ad Forensics will be disabled if any of above gestures are used for Ad Forensics.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRFMAdForensicsTouchGestureWithGestureRecognizer:(UIGestureRecognizer *)<em>aGesture</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aGesture</code></th>
+						<td><p>A custom gesture to be used for Forensics reporting. An instance of UIGestureRecognizer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Deprecated" name="task_Deprecated"></a>
+						<h2 class="task-title">Deprecated</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/offsetCentersForiOS7WithPortaitOffset:andLandscapeOffset:" title="offsetCentersForiOS7WithPortaitOffset:andLandscapeOffset:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/offsetCentersForiOS7WithPortaitOffset:andLandscapeOffset:">&ndash;&nbsp;offsetCentersForiOS7WithPortaitOffset:andLandscapeOffset:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adjust the placement of ad view coordinates contionally on iOS versions > 7.0</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)offsetCentersForiOS7WithPortaitOffset:(CGFloat)<em>portraitOffset</em> andLandscapeOffset:(CGFloat)<em>landscapeOffset</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>portraitOffset</code></th>
+						<td><p>Vertical offset to be applied on RFMAdView coordinates in portrait mode</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>landscapeOffset</code></th>
+						<td><p>Vertical offset to be applied on RFMAdView coordinates in landscape mode</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Optional method to adjust the adview placement if parent view controller cannot set the edges for extended layout to none. This is useful for allowing apps running OS lower than iOS7 to set their placement coordinates for iOS6 and iOS7+ without an explicit version check.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM SDK 3.0.0</strong> Replaced with <a href="#//api/name/applyVerticalOffsetForiOSGreaterThan:portraitOffset:landscapeOffset:">applyVerticalOffsetForiOSGreaterThan:portraitOffset:landscapeOffset:</a></p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/applyVerticalOffsetForiOSGreaterThan:portraitOffset:landscapeOffset:">- applyVerticalOffsetForiOSGreaterThan:portraitOffset:landscapeOffset:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mbsAdVersion" title="mbsAdVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mbsAdVersion">+&nbsp;mbsAdVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the Version number of RFM SDK in use.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)mbsAdVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>RFM SDK Version string</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM SDK 3.0.0</strong>. Replaced with <a href="#//api/name/rfmSDKVersion">rfmSDKVersion</a>.</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/rfmSDKVersion">+ rfmSDKVersion</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/canDisplayAd" title="canDisplayAd"></a>
+	<h3 class="method-title"><code><a href="#//api/name/canDisplayAd">&ndash;&nbsp;canDisplayAd</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if a cacheable ad is ready for display</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)canDisplayAd</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Status Boolean status code informing if there is a cacheable ad ready to be displayed or not.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Use this method to check if a cached ad is ready to be displayed or not. This is an optional method to allow better control of when to display a previously cached ad instead of calling <a href="#//api/name/showCachedAd">showCachedAd</a> directly without checking for availability.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM SDK 3.0.0</strong> Replaced with <a href="#//api/name/canDisplayCachedAd">canDisplayCachedAd</a></p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/requestCachedAdWithRequestParams:">- requestCachedAdWithRequestParams:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showAd" title="showAd"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showAd">&ndash;&nbsp;showAd</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Display a cached ad</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)showAd</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Status Boolean status code informing if an ad can be displayed or not.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this method to display a previously cached ad. This method checks whether a cacheable ad can be displayed or not before attempting to display the ad.
+Calling this method will invoke <a href="../Protocols/RFMAdDelegate.html">RFMAdDelegate</a> callback didFailToDisplayAd in case of failure to display.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM SDK 3.0.0</strong> Replaced with <a href="#//api/name/showCachedAd">showCachedAd</a></p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Rubicon%20Project. All rights reserved. Updated: 2016-02-05</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

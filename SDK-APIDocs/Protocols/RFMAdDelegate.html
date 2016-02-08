@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>RFMAdDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">RFMAdSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Rubicon%20Project</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/adForensicsReportingDidFail:reason:">- adForensicsReportingDidFail:reason:</option>
+		
+		<option value="//api/name/adForensicsReportingDidFinish:">- adForensicsReportingDidFinish:</option>
+		
+		<option value="//api/name/adForensicsReportingWillBegin:">- adForensicsReportingWillBegin:</option>
+		
+		<option value="//api/name/adViewDidStopLoadingAndEnteredBackground:">- adViewDidStopLoadingAndEnteredBackground:</option>
+		
+		<option value="//api/name/currentViewControllerForRFMAd:">- currentViewControllerForRFMAd:</option>
+		
+		<option value="//api/name/didDismissFullScreenModalFromAd:">- didDismissFullScreenModalFromAd:</option>
+		
+		<option value="//api/name/didDismissInterstitial">- didDismissInterstitial</option>
+		
+		<option value="//api/name/didDisplayAd:">- didDisplayAd:</option>
+		
+		<option value="//api/name/didFailToDisplayAd:">- didFailToDisplayAd:</option>
+		
+		<option value="//api/name/didFailToDisplayAd:reason:">- didFailToDisplayAd:reason:</option>
+		
+		<option value="//api/name/didFailToReceiveAd:">- didFailToReceiveAd:</option>
+		
+		<option value="//api/name/didFailToReceiveAd:reason:">- didFailToReceiveAd:reason:</option>
+		
+		<option value="//api/name/didPresentFullScreenModalFromAd:">- didPresentFullScreenModalFromAd:</option>
+		
+		<option value="//api/name/didReceiveAd:">- didReceiveAd:</option>
+		
+		<option value="//api/name/didRequestAd:withUrl:">- didRequestAd:withUrl:</option>
+		
+		<option value="//api/name/rfmAdSuperView">- rfmAdSuperView</option>
+		
+		<option value="//api/name/viewControllerForRFMModalView">- viewControllerForRFMModalView</option>
+		
+		<option value="//api/name/willDismissFullScreenModalFromAd:">- willDismissFullScreenModalFromAd:</option>
+		
+		<option value="//api/name/willDismissInterstitialFromAd:">- willDismissInterstitialFromAd:</option>
+		
+		<option value="//api/name/willPresentFullScreenModalFromAd:">- willPresentFullScreenModalFromAd:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">RFMAdDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>RFMAdDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class provides <a href="../Classes/RFMAdView.html">RFMAdView</a> delegate callbacks to monitor ad status and provide information for optimum ad interaction experience.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Controlling full screen ad display" name="task_Controlling full screen ad display"></a>
+						<h2 class="task-title">Controlling full screen ad display</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/rfmAdSuperView" title="rfmAdSuperView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rfmAdSuperView">&ndash;&nbsp;rfmAdSuperView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> SuperView of <a href="../Classes/RFMAdView.html">RFMAdView</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIView *)rfmAdSuperView</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The superview of <a href="../Classes/RFMAdView.html">RFMAdView</a> instance</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set this delegate method for optimum user experience with rich media ads that need to modify the view to non-standard sizes during user interaction</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/viewControllerForRFMModalView" title="viewControllerForRFMModalView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewControllerForRFMModalView">&ndash;&nbsp;viewControllerForRFMModalView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> View controller to present full screen modals</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIViewController *)viewControllerForRFMModalView</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The UIViewController instance that will be the parent for full screen modals.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The view controller which will be the parent controller for full screen modals. Full screen modals are used by RFM Ad SDK to load post click in-app browsers.
+For best results, please return the view controller whose content view covers full screen(apart from tabbar,nav bar and status bar. If the view controller which requested for ads does not have full screen access then return the parent view controller which has full screen access.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Loading the ad" name="task_Loading the ad"></a>
+						<h2 class="task-title">Loading the ad</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/didRequestAd:withUrl:" title="didRequestAd:withUrl:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didRequestAd:withUrl:">&ndash;&nbsp;didRequestAd:withUrl:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when ad request has been sent to server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didRequestAd:(RFMAdView *)<em>adView</em> withUrl:(NSString *)<em>requestUrlString</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestUrlString</code></th>
+						<td><p>The request URL for the request sent to RFM ad server.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This callback is triggered when an ad request has been successfully sent to the ad server. Please note that this does not signify that a response has been received from the ad server.
+This callback is useful for checking the request URL that is actually sent to the ad server.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didReceiveAd:" title="didReceiveAd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didReceiveAd:">&ndash;&nbsp;didReceiveAd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when an ad has been successfully fetched and loaded.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didReceiveAd:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For non-cacheable ads this is a good time to ad the <a href="../Classes/RFMAdView.html">RFMAdView</a> instance to the view hierarchy if it wasn&rsquo;t already part of view hierarchy.
+For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAdView.html">RFMAdView</a> showCachedAd method</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didFailToReceiveAd:reason:">- didFailToReceiveAd:reason:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didFailToReceiveAd:reason:" title="didFailToReceiveAd:reason:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didFailToReceiveAd:reason:">&ndash;&nbsp;didFailToReceiveAd:reason:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when the SDK failed to load an ad.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didFailToReceiveAd:(RFMAdView *)<em>adView</em> reason:(NSString *)<em>errorReason</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorReason</code></th>
+						<td><p>The reason for failure to load an ad</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sent when an ad request failed to load an ad. This is a good opportunity to remove the <a href="../Classes/RFMAdView.html">RFMAdView</a> instance from superview if it had been added already.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didReceiveAd:">- didReceiveAd:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didDisplayAd:" title="didDisplayAd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didDisplayAd:">&ndash;&nbsp;didDisplayAd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when the SDK displays a previously cached ad.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didDisplayAd:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Applicable only for cacheable ads callflow (i.e. when RFMAdView&rsquo;s showCachedAd is triggered). This callback is triggered when the SDK is able to successfully display a cached ad.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didReceiveAd:">- didReceiveAd:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didFailToDisplayAd:reason:" title="didFailToDisplayAd:reason:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didFailToDisplayAd:reason:">&ndash;&nbsp;didFailToDisplayAd:reason:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when the SDK fails to display a previously cached ad.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didFailToDisplayAd:(RFMAdView *)<em>adView</em> reason:(NSString *)<em>errorReason</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorReason</code></th>
+						<td><p>The reason for failure to display an ad</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Applicable only for cacheable ads callflow (i.e. when RFMAdView&rsquo;s showCachedAd is triggered). This callback is triggered when the SDK is able to unable to display a cached ad.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didReceiveAd:">- didReceiveAd:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="User Interaction" name="task_User Interaction"></a>
+						<h2 class="task-title">User Interaction</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/willDismissInterstitialFromAd:" title="willDismissInterstitialFromAd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/willDismissInterstitialFromAd:">&ndash;&nbsp;willDismissInterstitialFromAd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when an interstitial ad is about to be dismissed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)willDismissInterstitialFromAd:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Applicable only for interstitial ads. This callback is triggered whent the interstitial view is about to dismissed in response to user click of close button. This is a good to start preparing the view which will be displayed in lieu of the interstitial ad.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didDismissInterstitial" title="didDismissInterstitial"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didDismissInterstitial">&ndash;&nbsp;didDismissInterstitial</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate callback when an interstitial ad has been dismissed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didDismissInterstitial</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Applicable only for interstitial ads. This callback is triggered whent the interstitial view has been dismissed in response to user click of close button.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/willPresentFullScreenModalFromAd:" title="willPresentFullScreenModalFromAd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/willPresentFullScreenModalFromAd:">&ndash;&nbsp;willPresentFullScreenModalFromAd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view will be displayed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)willPresentFullScreenModalFromAd:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This callback is triggered when <a href="../Classes/RFMAdView.html">RFMAdView</a> is about to takeover the application screen with a full screen ad landing page in response to user interaction with the ad. Use this callback to stop animations, time sensitive interactions, ad refresh timers, etc as the user wants to interact with the ad.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didPresentFullScreenModalFromAd:" title="didPresentFullScreenModalFromAd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didPresentFullScreenModalFromAd:">&ndash;&nbsp;didPresentFullScreenModalFromAd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view is being displayed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didPresentFullScreenModalFromAd:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This callback is triggered right after <a href="../Classes/RFMAdView.html">RFMAdView</a> takes over the application screen with a full screen ad landing page in response to user interaction with the ad. This callback signifies that the user is interacting with the ad, so the application should pause any transitions till the user has completed ad interaction.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/willDismissFullScreenModalFromAd:">- willDismissFullScreenModalFromAd:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/didDismissFullScreenModalFromAd:">- didDismissFullScreenModalFromAd:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/willDismissFullScreenModalFromAd:" title="willDismissFullScreenModalFromAd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/willDismissFullScreenModalFromAd:">&ndash;&nbsp;willDismissFullScreenModalFromAd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view is about to be dismissed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)willDismissFullScreenModalFromAd:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This callback is triggered whent the ad view is about to dismissed in response to user click of close button. This is a good to start preparing the view which will be displayed in lieu of the interstitial ad.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/willPresentFullScreenModalFromAd:">- willPresentFullScreenModalFromAd:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/didPresentFullScreenModalFromAd:">- didPresentFullScreenModalFromAd:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didDismissFullScreenModalFromAd:" title="didDismissFullScreenModalFromAd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didDismissFullScreenModalFromAd:">&ndash;&nbsp;didDismissFullScreenModalFromAd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view has been dismissed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didDismissFullScreenModalFromAd:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This callback is triggered whent the interstitial view has been dismissed in response to user click of close button.  Use this opportunity to restart anything you may have stopped as part of <a href="#//api/name/willPresentFullScreenModalFromAd:">willPresentFullScreenModalFromAd:</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/willPresentFullScreenModalFromAd:">- willPresentFullScreenModalFromAd:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/didPresentFullScreenModalFromAd:">- didPresentFullScreenModalFromAd:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adViewDidStopLoadingAndEnteredBackground:" title="adViewDidStopLoadingAndEnteredBackground:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adViewDidStopLoadingAndEnteredBackground:">&ndash;&nbsp;adViewDidStopLoadingAndEnteredBackground:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when app is pushed to background while the ad banner was loading</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)adViewDidStopLoadingAndEnteredBackground:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This callback is triggered if the application will enter background (user touched home button, or clicked  a button which triggered another application and sent the current application in  background) while the ad banner was still loading. Prior to calling this function, <a href="../Classes/RFMAdSDK.html">RFMAdSDK</a> will stop loading the banner.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/willPresentFullScreenModalFromAd:">- willPresentFullScreenModalFromAd:</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/didPresentFullScreenModalFromAd:">- didPresentFullScreenModalFromAd:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adForensicsReportingWillBegin:" title="adForensicsReportingWillBegin:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adForensicsReportingWillBegin:">&ndash;&nbsp;adForensicsReportingWillBegin:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sent just before reporting to Ad Forensics server begins, when the default or customized
+Ad Forensics gesture recognizer is triggered.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)adForensicsReportingWillBegin:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> We strongly recommend that you handle this delegate callback
+to stop requesting new ads with the RFMAdview instance when you receive this callback. Otherwise
+there could be unpredicted behaviors if the RFMAdview is refreshed while Ad Forensics reporting is
+in progress.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adForensicsReportingDidFinish:" title="adForensicsReportingDidFinish:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adForensicsReportingDidFinish:">&ndash;&nbsp;adForensicsReportingDidFinish:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sent just after reporting to Ad Forensics server finishes, when reporting connection is
+closed and Ad Forensics progress dialog is dismissed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)adForensicsReportingDidFinish:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: If you implement adForensicsReportingWillBegin, we strongly
+recommend you to implement the following two delegate callbacks and resume requesting new ads with
+the RFMAdview instance.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adForensicsReportingDidFail:reason:" title="adForensicsReportingDidFail:reason:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adForensicsReportingDidFail:reason:">&ndash;&nbsp;adForensicsReportingDidFail:reason:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sent if reporting to Ad Forensics server failed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)adForensicsReportingDidFail:(RFMAdView *)<em>adView</em> reason:(NSString *)<em>errorReason</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorReason</code></th>
+						<td><p>The reason for Ad Forensics reporting failing</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Deprecated" name="task_Deprecated"></a>
+						<h2 class="task-title">Deprecated</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/currentViewControllerForRFMAd:" title="currentViewControllerForRFMAd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentViewControllerForRFMAd:">&ndash;&nbsp;currentViewControllerForRFMAd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> View controller to present full screen modals</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIViewController *)currentViewControllerForRFMAd:(RFMAdView *)<em>rfmAdView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rfmAdView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> that this method applies to</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The UIViewController instance that will be the parent for full screen modals.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The view controller which will be the parent controller for full screen modals. Full screen modals are used by RFM Ad SDK to load post click in-app browsers.
+For best results, please return the view controller whose content view covers full screen(apart from tabbar,nav bar and status bar. If the view controller which requested for ads does not have full screen access then return the parent view controller which has full screen access.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 3.0.0</strong>.</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/viewControllerForRFMModalView">- viewControllerForRFMModalView</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didFailToReceiveAd:" title="didFailToReceiveAd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didFailToReceiveAd:">&ndash;&nbsp;didFailToReceiveAd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when the SDK failed to load an ad.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didFailToReceiveAd:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sent when an ad request failed to load an ad. This is a good opportunity to remove the <a href="../Classes/RFMAdView.html">RFMAdView</a> instance from superview if it had been added already.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 3.0.0</strong></p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didFailToReceiveAd:reason:">- didFailToReceiveAd:reason:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didFailToDisplayAd:" title="didFailToDisplayAd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didFailToDisplayAd:">&ndash;&nbsp;didFailToDisplayAd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when the SDK fails to display a previously cached ad.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didFailToDisplayAd:(RFMAdView *)<em>adView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adView</code></th>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Applicable only for cacheable ads callflow (i.e. when RFMAdView&rsquo;s showCachedAd is triggered). This callback is triggered when the SDK is able to unable to display a cached ad.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 3.0.0</strong></p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didFailToDisplayAd:reason:">- didFailToDisplayAd:reason:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMAdDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Rubicon%20Project. All rights reserved. Updated: 2016-02-05</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
