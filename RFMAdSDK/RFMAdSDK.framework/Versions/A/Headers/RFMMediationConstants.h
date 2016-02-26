@@ -17,12 +17,16 @@
 #define kAdParamsClickUrlKey @"clickURL"
 #define kAdParamsAdViewInfoKey @"adViewInfo"
 #define kAdParamsAdRequestKey @"adRequest"
+#define kAdParamsVastPlaybackKey @"vastPlayback"
 #define kAdParamsAdPartnerTimeoutKey @"timeout"
 #define kAdParamsResponseTimeoutKey @"responseTimeout"
 
 #define kAdParamsMediationExtensionKey @"ext"
 #define kAdParamsId @"id"
 #define kAdParamsName @"name"
+
+#define kAdParamsVastSkipKey @"vastSkip"
+#define kAdParamsVastSkipOffsetKey @"vastSkipOffset"
 
 #define kAdParamsAdPreCacheKey @"shouldPrecache"
 

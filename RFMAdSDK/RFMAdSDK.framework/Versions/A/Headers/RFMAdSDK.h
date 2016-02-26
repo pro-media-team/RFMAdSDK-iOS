@@ -16,6 +16,7 @@
 #import <RFMAdSDK/RFMBaseMediator.h>
 #import <RFMAdSDK/RFMMediationHelper.h>
 #import <RFMAdSDK/RFMBaseMediatorDelegate.h>
+#import <RFMAdSDK/RFMFastLane.h>
 
 /**
  * Main interface for including RFMAdSDK headers

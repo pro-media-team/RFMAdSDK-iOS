@@ -131,6 +131,16 @@
  */
 @property (assign) CGFloat landingViewAlpha;
 
+
+/**
+ Fastlane
+ 
+ This is a readonly value that is set to YES by calling preFetchAdWithParams:
+ Default is set to NO, i.e. this is not a fastlane request.
+ @see [RFMFastLane preFetchAdWithParams:]
+ */
+@property (nonatomic, assign, readonly) BOOL isFastLane;
+
 /** @name Test Settings */
 
 /**
