@@ -19,7 +19,6 @@
 -(void)loadAdWithParams:(NSDictionary *)adParams;
 
 -(BOOL)supportsCachedAd;
--(void)showCachedAd;
 -(void)unregisterDelegate;
 -(void)rotatedToNewOrientation:(UIInterfaceOrientation)newOrientation;
 -(void)stopLoadingAd;

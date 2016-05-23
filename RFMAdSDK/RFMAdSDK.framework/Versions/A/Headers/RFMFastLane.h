@@ -2,7 +2,7 @@
 //  RFMFastLane.h
 //  RFMAdSDK
 //
-//  Created by Dean Chang on 12/8/15.
+//  Created by Rubicon Project on 12/8/15.
 //  Copyright © 2015 Rubicon Project. All rights reserved.
 //
 
@@ -54,6 +54,16 @@
  */
 - (id)initWithAdView:(UIView*)adView
             delegate:(id<RFMFastLaneDelegate>)delegate;
+
+/**
+ * Create an instance of RFMFastLane.
+ *
+ * @param size The size of the adview that will be used for the fastlane request
+ * @param delegate The delegate that conforms to RFMFastLaneDelegate
+ * @see preFetchAdWithParams:
+ */
+- (id)initWithSize:(CGSize)size
+          delegate:(id<RFMFastLaneDelegate>)delegate;
 
 /**
  * Prefetch ad for fastlane.

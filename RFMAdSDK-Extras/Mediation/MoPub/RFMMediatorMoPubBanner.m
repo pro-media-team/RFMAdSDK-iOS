@@ -2,7 +2,7 @@
 //  RFMMediatorMoPubBanner.m
 //  RFMSample
 //
-//  Created by Dean Chang on 12/17/15.
+//  Created by Rubicon Project on 12/17/15.
 //  Copyright © 2015 Rubicon Project. All rights reserved.
 //
 

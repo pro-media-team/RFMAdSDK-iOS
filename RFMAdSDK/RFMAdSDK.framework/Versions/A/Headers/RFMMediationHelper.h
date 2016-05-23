@@ -18,6 +18,7 @@
 +(BOOL)isAdInInit:(adLoadingStatusTypes) status;
 +(BOOL)isAdReadyForRequest:(adLoadingStatusTypes) status;
 +(BOOL)isWaitingForAd:(adLoadingStatusTypes) status;
++(BOOL)isAdPrecached:(adLoadingStatusTypes) status;
 +(BOOL)isAdInBannerView:(adLoadingStatusTypes) status;
 +(BOOL)isAdInInterstitialView:(adLoadingStatusTypes) status;
 +(BOOL)isAdRequestInterstitial:(adLoadingStatusTypes) status;

@@ -66,7 +66,6 @@
  */
 #define kMediationClassNameRfm @"RFMMediator"
 #define kMediationClassNameMraid @"RFMMraidMediator"
-#define kMediationClassNameRfmCaching @"RFMCachingMediator"
 #define kMediationClassNameVast @"RFMVastMediator"
 #define kMediationClassNamePartner @"RFMPartnerMediator"
 
@@ -108,6 +107,11 @@ typedef NS_ENUM(NSUInteger, adLoadingStatusTypes) {
      * Interstitial has been displayed
      */
     AD_INTERSTITIAL_DISPLAYED,
+    
+    /**
+     * Ad has been precached
+     */
+    AD_PRECACHED,
     
     /**
      * Ad is ready to display
