@@ -28,6 +28,8 @@
 #define kAdParamsVastSkipKey @"vastSkip"
 #define kAdParamsVastSkipOffsetKey @"vastSkipOffset"
 
+#define kAdParamsShowVideoCounterKey @"showVideoCounter"
+
 #define kAdParamsAdPreCacheKey @"shouldPrecache"
 
 #define AdViewInfoFullScreen @"fullScreen"

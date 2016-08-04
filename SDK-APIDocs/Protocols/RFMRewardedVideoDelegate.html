@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>RFMRewardedVideoDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">RFMAdSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Rubicon%20Project</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/didCompleteRewardedVideoPlayback:reward:">- didCompleteRewardedVideoPlayback:reward:</option>
+		
+		<option value="//api/name/didFailToPlayRewardedVideo:reason:">- didFailToPlayRewardedVideo:reason:</option>
+		
+		<option value="//api/name/didFailToReceiveRewardedVideo:reason:">- didFailToReceiveRewardedVideo:reason:</option>
+		
+		<option value="//api/name/didReceiveRewardedVideo:">- didReceiveRewardedVideo:</option>
+		
+		<option value="//api/name/didStartRewardedVideoPlayback:">- didStartRewardedVideoPlayback:</option>
+		
+		<option value="//api/name/rewardedVideoDidAppear:">- rewardedVideoDidAppear:</option>
+		
+		<option value="//api/name/rewardedVideoDidDisappear:">- rewardedVideoDidDisappear:</option>
+		
+		<option value="//api/name/rewardedVideoDidStopLoadingAndEnteredBackground:">- rewardedVideoDidStopLoadingAndEnteredBackground:</option>
+		
+		<option value="//api/name/rewardedVideoWillAppear:">- rewardedVideoWillAppear:</option>
+		
+		<option value="//api/name/rewardedVideoWillDisappear:">- rewardedVideoWillDisappear:</option>
+		
+		<option value="//api/name/rfmAdSuperView">- rfmAdSuperView</option>
+		
+		<option value="//api/name/viewControllerForRFMModalView">- viewControllerForRFMModalView</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">RFMRewardedVideoDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>RFMRewardedVideo.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Rewarded video protocol for the receiving of rewarded video callbacks or notifications.</p>
+
+<p>The rewarded video delegate should conform to this protocol.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/didReceiveRewardedVideo:" title="didReceiveRewardedVideo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didReceiveRewardedVideo:">&ndash;&nbsp;didReceiveRewardedVideo:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Rewarded video has been successfully fetched from the ad server and loaded. If
+cacheable rewarded video was requested this delegate will be triggered once caching is successful
+and rewarded video is ready to be displayed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didReceiveRewardedVideo:(RFMRewardedVideo *)<em>rewardedVideo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rewardedVideo</code></th>
+						<td><p>The instance of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> for which this callback has been triggered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didFailToReceiveRewardedVideo:reason:">- didFailToReceiveRewardedVideo:reason:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didFailToReceiveRewardedVideo:reason:" title="didFailToReceiveRewardedVideo:reason:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didFailToReceiveRewardedVideo:reason:">&ndash;&nbsp;didFailToReceiveRewardedVideo:reason:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> SDK failed to receive and load rewarded video. If cacheable rewarded video was requested
+this delegate will be triggered if caching was not successful.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didFailToReceiveRewardedVideo:(RFMRewardedVideo *)<em>rewardedVideo</em> reason:(NSString *)<em>errorReason</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rewardedVideo</code></th>
+						<td><p>The instance of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> for which this callback has been triggered.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorReason</code></th>
+						<td><p>The reason for failure to load rewarded video.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didReceiveRewardedVideo:">- didReceiveRewardedVideo:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rewardedVideoWillAppear:" title="rewardedVideoWillAppear:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rewardedVideoWillAppear:">&ndash;&nbsp;rewardedVideoWillAppear:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Rewarded video is about to appear.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)rewardedVideoWillAppear:(RFMRewardedVideo *)<em>rewardedVideo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rewardedVideo</code></th>
+						<td><p>The instance of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> for which this callback has been triggered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rewardedVideoDidAppear:" title="rewardedVideoDidAppear:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rewardedVideoDidAppear:">&ndash;&nbsp;rewardedVideoDidAppear:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Rewarded video has appeared.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)rewardedVideoDidAppear:(RFMRewardedVideo *)<em>rewardedVideo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rewardedVideo</code></th>
+						<td><p>The instance of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> for which this callback has been triggered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didStartRewardedVideoPlayback:" title="didStartRewardedVideoPlayback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didStartRewardedVideoPlayback:">&ndash;&nbsp;didStartRewardedVideoPlayback:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Started playing rewarded video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didStartRewardedVideoPlayback:(RFMRewardedVideo *)<em>rewardedVideo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rewardedVideo</code></th>
+						<td><p>The instance of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> for which this callback has been triggered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didFailToPlayRewardedVideo:reason:" title="didFailToPlayRewardedVideo:reason:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didFailToPlayRewardedVideo:reason:">&ndash;&nbsp;didFailToPlayRewardedVideo:reason:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> There was a playback error that occured for the rewarded video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didFailToPlayRewardedVideo:(RFMRewardedVideo *)<em>rewardedVideo</em> reason:(NSString *)<em>errorReason</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rewardedVideo</code></th>
+						<td><p>The instance of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> for which this callback has been triggered.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorReason</code></th>
+						<td><p>The reason for failure to play rewarded video.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didCompleteRewardedVideoPlayback:reward:" title="didCompleteRewardedVideoPlayback:reward:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didCompleteRewardedVideoPlayback:reward:">&ndash;&nbsp;didCompleteRewardedVideoPlayback:reward:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> SDK completed playing rewarded video ad to its entirety. The reward information
+specified for this placement will be provided to the publisher at this time.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didCompleteRewardedVideoPlayback:(RFMRewardedVideo *)<em>rewardedVideo</em> reward:(RFMReward *)<em>rfmReward</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rewardedVideo</code></th>
+						<td><p>The instance of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> for which this callback has been triggered.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rfmReward</code></th>
+						<td><p>An instance of RFMReward containing reward information for this placement.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rewardedVideoWillDisappear:" title="rewardedVideoWillDisappear:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rewardedVideoWillDisappear:">&ndash;&nbsp;rewardedVideoWillDisappear:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Rewarded video is about to disappear.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)rewardedVideoWillDisappear:(RFMRewardedVideo *)<em>rewardedVideo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rewardedVideo</code></th>
+						<td><p>The instance of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> for which this callback has been triggered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rewardedVideoDidDisappear:" title="rewardedVideoDidDisappear:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rewardedVideoDidDisappear:">&ndash;&nbsp;rewardedVideoDidDisappear:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Rewarded video has disappeared.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)rewardedVideoDidDisappear:(RFMRewardedVideo *)<em>rewardedVideo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rewardedVideo</code></th>
+						<td><p>The instance of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> for which this callback has been triggered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rfmAdSuperView" title="rfmAdSuperView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rfmAdSuperView">&ndash;&nbsp;rfmAdSuperView</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> SuperView of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIView *)rfmAdSuperView</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The superview of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> instance.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set this delegate method for optimum user experience with rich media ads that need to modify the
+view to non-standard sizes during user interaction.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/viewControllerForRFMModalView" title="viewControllerForRFMModalView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/viewControllerForRFMModalView">&ndash;&nbsp;viewControllerForRFMModalView</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> View controller to present full screen modals.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIViewController *)viewControllerForRFMModalView</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The UIViewController instance that will be the parent for full screen modals.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The view controller which will be the parent controller for full screen modals. Full screen modals
+are used by RFM Ad SDK to load post click in-app browsers.
+For best results, please return the view controller whose content view covers full screen (apart
+from tab bar, nav bar and status bar). If the view controller that requested for ads does not have
+full screen access then return the parent view controller that does have full screen access.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rewardedVideoDidStopLoadingAndEnteredBackground:" title="rewardedVideoDidStopLoadingAndEnteredBackground:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rewardedVideoDidStopLoadingAndEnteredBackground:">&ndash;&nbsp;rewardedVideoDidStopLoadingAndEnteredBackground:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when app is pushed to background while the rewarded video was loading.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)rewardedVideoDidStopLoadingAndEnteredBackground:(RFMRewardedVideo *)<em>rewardedVideo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rewardedVideo</code></th>
+						<td><p>The instance of <a href="../Classes/RFMRewardedVideo.html">RFMRewardedVideo</a> for which this callback has been triggered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This callback is triggered if the application will enter background while the rewarded video is still
+loading due to the user clicking home button, the user clicking a button that triggers another
+application and sends the current application into background, etc. Prior to calling this function,
+<a href="../Classes/RFMAdSDK.html">RFMAdSDK</a> will stop loading the rewarded video.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMRewardedVideo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Rubicon%20Project. All rights reserved. Updated: 2016-08-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

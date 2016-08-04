@@ -134,7 +134,8 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>This class provides <a href="../Classes/RFMAdView.html">RFMAdView</a> delegate callbacks to monitor ad status and provide information for optimum ad interaction experience.</p>
+						<p>This class provides <a href="../Classes/RFMAdView.html">RFMAdView</a> delegate callbacks to monitor ad status and provide information
+for optimum ad interaction experience.</p>
 					</div>
 					
 					
@@ -161,7 +162,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p><strong>Optional</strong> SuperView of <a href="../Classes/RFMAdView.html">RFMAdView</a></p>
+				<p><strong>Optional</strong> SuperView of <a href="../Classes/RFMAdView.html">RFMAdView</a>.</p>
 			</div>
 			
 		    
@@ -174,7 +175,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>The superview of <a href="../Classes/RFMAdView.html">RFMAdView</a> instance</p>
+				<p>The superview of <a href="../Classes/RFMAdView.html">RFMAdView</a> instance.</p>
 			</div>
 			
 
@@ -183,7 +184,8 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set this delegate method for optimum user experience with rich media ads that need to modify the view to non-standard sizes during user interaction</p>
+				<p>Set this delegate method for optimum user experience with rich media ads that need to modify the
+view to non-standard sizes during user interaction.</p>
 			</div>
 			
 
@@ -212,7 +214,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p><strong>Optional</strong> View controller to present full screen modals</p>
+				<p><strong>Optional</strong> View controller to present full screen modals.</p>
 			</div>
 			
 		    
@@ -234,8 +236,11 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The view controller which will be the parent controller for full screen modals. Full screen modals are used by RFM Ad SDK to load post click in-app browsers.
-For best results, please return the view controller whose content view covers full screen(apart from tabbar,nav bar and status bar. If the view controller which requested for ads does not have full screen access then return the parent view controller which has full screen access.</p>
+				<p>The view controller which will be the parent controller for full screen modals. Full screen modals
+are used by RFM Ad SDK to load post click in-app browsers.
+For best results, please return the view controller whose content view covers full screen (apart
+from tab bar, nav bar and status bar). If the view controller that requested for ads does not have
+full screen access then return the parent view controller that does have full screen access.</p>
 			</div>
 			
 
@@ -272,7 +277,7 @@ For best results, please return the view controller whose content view covers fu
 			
 			
 			<div class="method-subsection brief-description">
-				<p><strong>Optional</strong> Delegate callback when ad request has been sent to server</p>
+				<p><strong>Optional</strong> Delegate callback when ad request has been sent to server.</p>
 			</div>
 			
 		    
@@ -287,7 +292,7 @@ For best results, please return the view controller whose content view covers fu
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 					<tr>
@@ -306,8 +311,9 @@ For best results, please return the view controller whose content view covers fu
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>This callback is triggered when an ad request has been successfully sent to the ad server. Please note that this does not signify that a response has been received from the ad server.
-This callback is useful for checking the request URL that is actually sent to the ad server.</p>
+				<p>This callback is triggered when an ad request has been successfully sent to the ad server. Please
+note that this does not signify that a response has been received from the ad server. This callback
+is useful for checking the request URL that is actually sent to the ad server.</p>
 			</div>
 			
 
@@ -351,7 +357,7 @@ This callback is useful for checking the request URL that is actually sent to th
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -365,8 +371,9 @@ This callback is useful for checking the request URL that is actually sent to th
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>For non-cacheable ads this is a good time to ad the <a href="../Classes/RFMAdView.html">RFMAdView</a> instance to the view hierarchy if it wasn&rsquo;t already part of view hierarchy.
-For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAdView.html">RFMAdView</a> showCachedAd method</p>
+				<p>For non-cacheable ads, this is a good time to add the <a href="../Classes/RFMAdView.html">RFMAdView</a> instance to the view hierarchy if it
+wasn&rsquo;t already part of view hierarchy.
+For cacheable ads, this callback can be used to trigger <a href="../Classes/RFMAdView.html">RFMAdView</a> showCachedAd method.</p>
 			</div>
 			
 
@@ -419,12 +426,12 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>errorReason</code></th>
-						<td><p>The reason for failure to load an ad</p></td>
+						<td><p>The reason for failure to load an ad.</p></td>
 					</tr>
 				
 				</table>
@@ -438,7 +445,8 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Sent when an ad request failed to load an ad. This is a good opportunity to remove the <a href="../Classes/RFMAdView.html">RFMAdView</a> instance from superview if it had been added already.</p>
+				<p>Sent when an ad request failed to load an ad. This is a good opportunity to remove the <a href="../Classes/RFMAdView.html">RFMAdView</a>
+instance from superview if it had previously been added.</p>
 			</div>
 			
 
@@ -491,7 +499,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -505,7 +513,8 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Applicable only for cacheable ads callflow (i.e. when RFMAdView&rsquo;s showCachedAd is triggered). This callback is triggered when the SDK is able to successfully display a cached ad.</p>
+				<p>Applicable only for cacheable ads callflow (i.e. when RFMAdView&rsquo;s showCachedAd is triggered). This
+callback is triggered when the SDK is able to successfully display a cached ad.</p>
 			</div>
 			
 
@@ -516,7 +525,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				<h4 class="method-subtitle">See Also</h4>
 				<ul>
 					
-					<li><code><p><a href="#//api/name/didReceiveAd:">- didReceiveAd:</a></p></code></li>
+					<li><code><p><a href="#//api/name/didFailToDisplayAd:reason:">- didFailToDisplayAd:reason:</a></p></code></li>
 					
 				</ul>
 			</div>
@@ -558,12 +567,12 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>errorReason</code></th>
-						<td><p>The reason for failure to display an ad</p></td>
+						<td><p>The reason for failure to display an ad.</p></td>
 					</tr>
 				
 				</table>
@@ -577,7 +586,8 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Applicable only for cacheable ads callflow (i.e. when RFMAdView&rsquo;s showCachedAd is triggered). This callback is triggered when the SDK is able to unable to display a cached ad.</p>
+				<p>Applicable only for cacheable ads callflow (i.e. when RFMAdView&rsquo;s showCachedAd is triggered). This
+callback is triggered when the SDK is unable to display a cached ad.</p>
 			</div>
 			
 
@@ -588,7 +598,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				<h4 class="method-subtitle">See Also</h4>
 				<ul>
 					
-					<li><code><p><a href="#//api/name/didReceiveAd:">- didReceiveAd:</a></p></code></li>
+					<li><code><p><a href="#//api/name/didDisplayAd:">- didDisplayAd:</a></p></code></li>
 					
 				</ul>
 			</div>
@@ -623,7 +633,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			
 			<div class="method-subsection brief-description">
-				<p><strong>Optional</strong> Delegate callback when an interstitial ad is about to be dismissed</p>
+				<p><strong>Optional</strong> Delegate callback when an interstitial ad is about to be dismissed.</p>
 			</div>
 			
 		    
@@ -638,7 +648,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -652,7 +662,9 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Applicable only for interstitial ads. This callback is triggered whent the interstitial view is about to dismissed in response to user click of close button. This is a good to start preparing the view which will be displayed in lieu of the interstitial ad.</p>
+				<p>Applicable only for interstitial ads. This callback is triggered when the interstitial view is
+about to dismissed in response to user click of close button. This is a good time to start preparing
+the view which will be displayed in lieu of the interstitial ad.</p>
 			</div>
 			
 
@@ -681,7 +693,8 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Delegate callback when an interstitial ad has been dismissed</p>
+				<p>This delegate callback is applicable only for interstitial ads. This callback is triggered when the
+interstitial view has been dismissed in response to user click of close button.</p>
 			</div>
 			
 		    
@@ -695,11 +708,6 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 
 			
 
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Applicable only for interstitial ads. This callback is triggered whent the interstitial view has been dismissed in response to user click of close button.</p>
-			</div>
 			
 
 			
@@ -727,7 +735,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			
 			<div class="method-subsection brief-description">
-				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view will be displayed</p>
+				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view will be displayed.</p>
 			</div>
 			
 		    
@@ -742,7 +750,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -756,7 +764,9 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>This callback is triggered when <a href="../Classes/RFMAdView.html">RFMAdView</a> is about to takeover the application screen with a full screen ad landing page in response to user interaction with the ad. Use this callback to stop animations, time sensitive interactions, ad refresh timers, etc as the user wants to interact with the ad.</p>
+				<p>This callback is triggered when <a href="../Classes/RFMAdView.html">RFMAdView</a> is about to take over the application screen with a full
+screen ad landing page in response to user interaction with the ad. Use this callback to stop animations,
+time sensitive interactions, ad refresh timers, etc as the user wants to interact with the ad.</p>
 			</div>
 			
 
@@ -785,7 +795,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			
 			<div class="method-subsection brief-description">
-				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view is being displayed</p>
+				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view is being displayed.</p>
 			</div>
 			
 		    
@@ -800,7 +810,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -814,7 +824,10 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>This callback is triggered right after <a href="../Classes/RFMAdView.html">RFMAdView</a> takes over the application screen with a full screen ad landing page in response to user interaction with the ad. This callback signifies that the user is interacting with the ad, so the application should pause any transitions till the user has completed ad interaction.</p>
+				<p>This callback is triggered right after <a href="../Classes/RFMAdView.html">RFMAdView</a> takes over the application screen with a full screen
+ad landing page in response to user interaction with the ad. This callback signifies that the user is
+interacting with the ad. The application should pause any transitions until the user has completed
+ad interaction.</p>
 			</div>
 			
 
@@ -854,7 +867,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			
 			<div class="method-subsection brief-description">
-				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view is about to be dismissed</p>
+				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view is about to be dismissed.</p>
 			</div>
 			
 		    
@@ -869,7 +882,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -883,7 +896,9 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>This callback is triggered whent the ad view is about to dismissed in response to user click of close button. This is a good to start preparing the view which will be displayed in lieu of the interstitial ad.</p>
+				<p>This callback is triggered when the ad view is about to be dismissed in response to user click of
+close button. This is a good time to start preparing the view which will be displayed in lieu of the
+interstitial ad.</p>
 			</div>
 			
 
@@ -923,7 +938,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			
 			<div class="method-subsection brief-description">
-				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view has been dismissed</p>
+				<p><strong>Optional</strong> Delegate callback when a full screen ad landing view has been dismissed.</p>
 			</div>
 			
 		    
@@ -938,7 +953,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -952,7 +967,9 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>This callback is triggered whent the interstitial view has been dismissed in response to user click of close button.  Use this opportunity to restart anything you may have stopped as part of <a href="#//api/name/willPresentFullScreenModalFromAd:">willPresentFullScreenModalFromAd:</a>.</p>
+				<p>This callback is triggered when the interstitial view has been dismissed in response to user click of
+close button. Use this opportunity to restart anything you may have stopped as part of
+<a href="#//api/name/willPresentFullScreenModalFromAd:">willPresentFullScreenModalFromAd:</a>.</p>
 			</div>
 			
 
@@ -992,7 +1009,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			
 			<div class="method-subsection brief-description">
-				<p><strong>Optional</strong> Delegate callback when app is pushed to background while the ad banner was loading</p>
+				<p><strong>Optional</strong> Delegate callback when app is pushed to background while the ad banner was loading.</p>
 			</div>
 			
 		    
@@ -1007,7 +1024,7 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -1021,7 +1038,10 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>This callback is triggered if the application will enter background (user touched home button, or clicked  a button which triggered another application and sent the current application in  background) while the ad banner was still loading. Prior to calling this function, <a href="../Classes/RFMAdSDK.html">RFMAdSDK</a> will stop loading the banner.</p>
+				<p>This callback is triggered if the application will enter background while the ad banner is still
+loading due to the user clicking home button, the user clicking a button that triggers another
+application and sends the current application into background, etc. Prior to calling this function,
+<a href="../Classes/RFMAdSDK.html">RFMAdSDK</a> will stop loading the banner.</p>
 			</div>
 			
 
@@ -1061,8 +1081,8 @@ For cacheable ads this callback is the time to trigger <a href="../Classes/RFMAd
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Sent just before reporting to Ad Forensics server begins, when the default or customized
-Ad Forensics gesture recognizer is triggered.</p>
+				<p>Sent just before reporting to Ad Forensics server begins, when the default or customized Ad Forensics
+gesture recognizer is triggered.</p>
 			</div>
 			
 		    
@@ -1077,7 +1097,7 @@ Ad Forensics gesture recognizer is triggered.</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -1091,10 +1111,9 @@ Ad Forensics gesture recognizer is triggered.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<div class="warning"><p><strong>Warning:</strong> We strongly recommend that you handle this delegate callback
-to stop requesting new ads with the RFMAdview instance when you receive this callback. Otherwise
-there could be unpredicted behaviors if the RFMAdview is refreshed while Ad Forensics reporting is
-in progress.</p></div>
+				<div class="warning"><p><strong>Warning:</strong> We strongly recommend that you stop requesting new ads with the RFMAdview instance when you
+receive this callback. Otherwise there could be unpredicted behaviors if the RFMAdview is refreshed
+while Ad Forensics reporting is in progress.</p></div>
 			</div>
 			
 
@@ -1123,8 +1142,8 @@ in progress.</p></div>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Sent just after reporting to Ad Forensics server finishes, when reporting connection is
-closed and Ad Forensics progress dialog is dismissed.</p>
+				<p>Sent just after reporting to Ad Forensics server finishes, when reporting connection is closed and Ad
+Forensics progress dialog is dismissed.</p>
 			</div>
 			
 		    
@@ -1139,7 +1158,7 @@ closed and Ad Forensics progress dialog is dismissed.</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -1153,9 +1172,8 @@ closed and Ad Forensics progress dialog is dismissed.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Note: If you implement adForensicsReportingWillBegin, we strongly
-recommend you to implement the following two delegate callbacks and resume requesting new ads with
-the RFMAdview instance.</p>
+				<p>Note: If you implement adForensicsReportingWillBegin, we strongly recommend you to implement this
+callback and resume requesting new ads with the RFMAdview instance.</p>
 			</div>
 			
 
@@ -1204,7 +1222,7 @@ the RFMAdview instance.</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>errorReason</code></th>
-						<td><p>The reason for Ad Forensics reporting failing</p></td>
+						<td><p>The reason for Ad Forensics reporting failing.</p></td>
 					</tr>
 				
 				</table>
@@ -1215,6 +1233,12 @@ the RFMAdview instance.</p>
 
 			
 
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: If you implement adForensicsReportingWillBegin, we strongly recommend you to implement this
+callback and resume requesting new ads with the RFMAdview instance.</p>
+			</div>
 			
 
 			
@@ -1265,7 +1289,7 @@ the RFMAdview instance.</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>rfmAdView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> that this method applies to</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> that this method applies to.</p></td>
 					</tr>
 				
 				</table>
@@ -1284,8 +1308,11 @@ the RFMAdview instance.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The view controller which will be the parent controller for full screen modals. Full screen modals are used by RFM Ad SDK to load post click in-app browsers.
-For best results, please return the view controller whose content view covers full screen(apart from tabbar,nav bar and status bar. If the view controller which requested for ads does not have full screen access then return the parent view controller which has full screen access.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 3.0.0</strong>.</p></div>
+				<p>The view controller which will be the parent controller for full screen modals. Full screen modals
+are used by RFM Ad SDK to load post click in-app browsers.
+For best results, please return the view controller whose content view covers full screen (apart from
+tab bar, nav bar and status bar). If the view controller which requested for ads does not have full
+screen access then return the parent view controller which has full screen access.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 3.0.0</strong></p></div>
 			</div>
 			
 
@@ -1338,7 +1365,7 @@ For best results, please return the view controller whose content view covers fu
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -1352,7 +1379,8 @@ For best results, please return the view controller whose content view covers fu
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Sent when an ad request failed to load an ad. This is a good opportunity to remove the <a href="../Classes/RFMAdView.html">RFMAdView</a> instance from superview if it had been added already.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 3.0.0</strong></p></div>
+				<p>Sent when an ad request failed to load an ad. This is a good opportunity to remove the <a href="../Classes/RFMAdView.html">RFMAdView</a>
+instance from superview if it had previously been added.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 3.0.0</strong></p></div>
 			</div>
 			
 
@@ -1405,7 +1433,7 @@ For best results, please return the view controller whose content view covers fu
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>adView</code></th>
-						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered</p></td>
+						<td><p>The instance of <a href="../Classes/RFMAdView.html">RFMAdView</a> for which this callback has been triggered.</p></td>
 					</tr>
 				
 				</table>
@@ -1419,7 +1447,8 @@ For best results, please return the view controller whose content view covers fu
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Applicable only for cacheable ads callflow (i.e. when RFMAdView&rsquo;s showCachedAd is triggered). This callback is triggered when the SDK is able to unable to display a cached ad.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 3.0.0</strong></p></div>
+				<p>Applicable only for cacheable ads callflow (i.e. when RFMAdView&rsquo;s showCachedAd is triggered). This
+callback is triggered when the SDK is unable to display a cached ad.</p><div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 3.0.0</strong></p></div>
 			</div>
 			
 
@@ -1460,7 +1489,7 @@ For best results, please return the view controller whose content view covers fu
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Rubicon%20Project. All rights reserved. Updated: 2016-05-17</p>
+						<p class="copyright">Copyright &copy; 2016 Rubicon%20Project. All rights reserved. Updated: 2016-08-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -8,6 +8,7 @@
 
 #import "RFMAdDelegate.h"
 #import "RFMAdConstants.h"
+#import "RFMRewardedVideo.h"
 
 @class RFMAdRequest;
 

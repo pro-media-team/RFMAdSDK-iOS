@@ -9,6 +9,8 @@
 #import "RFMMediationConstants.h"
 @class RFMAdView;
 @class RFMBaseMediator;
+@class RFMRewardedVideo;
+@class RFMReward;
 
 @protocol RFMBaseMediatorDelegate <NSObject>
 
@@ -54,6 +56,13 @@
 
 -(void)mediator:(RFMBaseMediator *)mediator didFailToDisplayAdWithReason:(NSString *)errorReason;
 -(void)mediator:(RFMBaseMediator *)mediator didDisplayAd:(UIView *)adView;
+
+//Rewarded Video
+-(void)mediator:(RFMBaseMediator *)mediator rewardedVideoWillAppear:(UIView *)creativeView;
+-(void)mediator:(RFMBaseMediator *)mediator rewardedVideoDidAppear:(UIView *)creativeView;
+-(void)mediator:(RFMBaseMediator *)mediator didStartRewardedVideoPlayback:(UIView *)creativeView;
+-(void)mediator:(RFMBaseMediator *)mediator didFailToPlayRewardedVideo:(UIView *)creativeView reason:(NSString *)errorReason;
+-(void)mediator:(RFMBaseMediator *)mediator didCompleteRewardedVideoPlayback:(UIView *)creativeView;
 
 //@optional
 // Forensics reporting
