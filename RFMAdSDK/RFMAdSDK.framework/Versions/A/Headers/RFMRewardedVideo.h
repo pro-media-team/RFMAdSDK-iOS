@@ -143,20 +143,21 @@
 /**
  * Create an instance of RFMRewardedVideo.
  *
- * @param size The size of the adview that will be used for the rewarded video.
  * @param delegate The delegate that conforms to RFMRewardedVideoDelegate.
  */
 - (id)initWithDelegate:(id<RFMRewardedVideoDelegate>)delegate;
 
 /**
  * Request a fresh rewarded video from RFM ad server.
+ *
  * @param requestParams Request parameters for this call. Instance of RFMAdRequest.
  */
 - (BOOL)requestFreshRewardedVideoWithParams:(RFMAdRequest *)requestParams;
 
 /**
  * Request a new cacheable rewarded video from RFM ad server.
- * @param Request parameters for this call. Instance of RFMAdRequest.
+ *
+ * @param requestParams Request parameters for this call. Instance of RFMAdRequest.
  */
 - (BOOL)requestCachedRewardedVideoWithParams:(RFMAdRequest *)requestParams;
 
@@ -169,7 +170,6 @@
  * Display a rewarded video.
  */
 - (BOOL)showRewardedVideo;
-
 
 /**
  * Invalidates the current rewarded video and removes it from cache

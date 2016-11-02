@@ -62,7 +62,11 @@
 		
 		<option value="//api/name/didFailToReceiveFastLaneAdWithReason:">- didFailToReceiveFastLaneAdWithReason:</option>
 		
+		<option value="//api/name/didFailToReceiveFastLaneAdWithReason:rfmAppId:">- didFailToReceiveFastLaneAdWithReason:rfmAppId:</option>
+		
 		<option value="//api/name/didReceiveFastLaneAdInfo:">- didReceiveFastLaneAdInfo:</option>
+		
+		<option value="//api/name/didReceiveFastLaneAdInfo:rfmAppId:">- didReceiveFastLaneAdInfo:rfmAppId:</option>
 		
 	</optgroup>
 	
@@ -116,9 +120,144 @@
 
 						<div class="task-list">
 							<div class="section-method">
+	<a name="//api/name/didReceiveFastLaneAdInfo:rfmAppId:" title="didReceiveFastLaneAdInfo:rfmAppId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didReceiveFastLaneAdInfo:rfmAppId:">&ndash;&nbsp;didReceiveFastLaneAdInfo:rfmAppId:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate callback when an ad has been successfully prefetched.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didReceiveFastLaneAdInfo:(NSDictionary *)<em>adInfo</em> rfmAppId:(NSString *)<em>rfmAppId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adInfo</code></th>
+						<td><p>dictionary that contains information pertaining to ad,
+such as fastlane bid range</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rfmAppId</code></th>
+						<td><p>application ID associated to fastlane request</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didFailToReceiveFastLaneAdWithReason:rfmAppId:">- didFailToReceiveFastLaneAdWithReason:rfmAppId:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMFastLane.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didFailToReceiveFastLaneAdWithReason:rfmAppId:" title="didFailToReceiveFastLaneAdWithReason:rfmAppId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didFailToReceiveFastLaneAdWithReason:rfmAppId:">&ndash;&nbsp;didFailToReceiveFastLaneAdWithReason:rfmAppId:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><strong>Optional</strong> Delegate callback when the SDK failed to prefetch an ad.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didFailToReceiveFastLaneAdWithReason:(NSString *)<em>errorReason</em> rfmAppId:(NSString *)<em>rfmAppId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorReason</code></th>
+						<td><p>The reason for failure to load an ad</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rfmAppId</code></th>
+						<td><p>application ID associated to fastlane request</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didReceiveFastLaneAdInfo:rfmAppId:">- didReceiveFastLaneAdInfo:rfmAppId:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RFMFastLane.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/didReceiveFastLaneAdInfo:" title="didReceiveFastLaneAdInfo:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/didReceiveFastLaneAdInfo:">&ndash;&nbsp;didReceiveFastLaneAdInfo:</a></code>
-<span class="task-item-suffix">required method</span></h3>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -155,6 +294,11 @@ such as fastlane bid range</p></td>
 			
 
 			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 5.1.0</strong></p></div>
+			</div>
+			
 
 			
 
@@ -163,7 +307,7 @@ such as fastlane bid range</p></td>
 				<h4 class="method-subtitle">See Also</h4>
 				<ul>
 					
-					<li><code><p><a href="#//api/name/didFailToReceiveFastLaneAdWithReason:">- didFailToReceiveFastLaneAdWithReason:</a></p></code></li>
+					<li><code><p><a href="#//api/name/didReceiveFastLaneAdInfo:rfmAppId:">- didReceiveFastLaneAdInfo:rfmAppId:</a></p></code></li>
 					
 				</ul>
 			</div>
@@ -181,7 +325,7 @@ such as fastlane bid range</p></td>
 </div><div class="section-method">
 	<a name="//api/name/didFailToReceiveFastLaneAdWithReason:" title="didFailToReceiveFastLaneAdWithReason:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/didFailToReceiveFastLaneAdWithReason:">&ndash;&nbsp;didFailToReceiveFastLaneAdWithReason:</a></code>
-<span class="task-item-suffix">required method</span></h3>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -217,6 +361,11 @@ such as fastlane bid range</p></td>
 			
 
 			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> <strong>Deprecated in RFM iOS SDK 5.1.0</strong></p></div>
+			</div>
+			
 
 			
 
@@ -225,7 +374,7 @@ such as fastlane bid range</p></td>
 				<h4 class="method-subtitle">See Also</h4>
 				<ul>
 					
-					<li><code><p><a href="#//api/name/didReceiveFastLaneAdInfo:">- didReceiveFastLaneAdInfo:</a></p></code></li>
+					<li><code><p><a href="#//api/name/didFailToReceiveFastLaneAdWithReason:rfmAppId:">- didFailToReceiveFastLaneAdWithReason:rfmAppId:</a></p></code></li>
 					
 				</ul>
 			</div>
@@ -255,7 +404,7 @@ such as fastlane bid range</p></td>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Rubicon%20Project. All rights reserved. Updated: 2016-08-02</p>
+						<p class="copyright">Copyright &copy; 2016 Rubicon%20Project. All rights reserved. Updated: 2016-11-01</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

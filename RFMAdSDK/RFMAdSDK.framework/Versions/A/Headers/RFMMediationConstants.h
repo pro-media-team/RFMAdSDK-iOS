@@ -20,6 +20,11 @@
 #define kAdParamsVastPlaybackKey @"vastPlayback"
 #define kAdParamsAdPartnerTimeoutKey @"timeout"
 #define kAdParamsResponseTimeoutKey @"responseTimeout"
+#define kAdParamsCacheExpiryKey @"expiry"
+
+#define kAdParamsNativeLayoutKey @"layout"
+#define kAdParamsNativeAdChoicesImgUrlKey @"adChoicesImgUrl"
+#define kAdParamsNativeAdChoicesOptOutUrlKey @"adChoicesOptUrl"
 
 #define kAdParamsMediationExtensionKey @"ext"
 #define kAdParamsId @"id"
@@ -55,6 +60,7 @@
 #define kMediationTypeRfmCaching @"cache"
 #define kMediationTypeVast @"VAST"
 #define kMediationTypePartner @"partner"
+#define kMediationTypeNative @"native"
 
 /**
  * Third-party mediation names
@@ -70,6 +76,7 @@
 #define kMediationClassNameMraid @"RFMMraidMediator"
 #define kMediationClassNameVast @"RFMVastMediator"
 #define kMediationClassNamePartner @"RFMPartnerMediator"
+#define kMediationClassNameNative @"RFMNativeMediator"
 
 /**
  * Status enums for the AdView
