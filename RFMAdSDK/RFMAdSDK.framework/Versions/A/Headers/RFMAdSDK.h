@@ -19,6 +19,7 @@
 #import <RFMAdSDK/RFMFastLane.h>
 #import <RFMAdSDK/RFMRewardedVideo.h>
 #import <RFMAdSDK/RFMNativeAd.h>
+#import <RFMAdSDK/RFMNativeAdPlacer.h>
 
 /**
  * Main interface for including RFMAdSDK headers
