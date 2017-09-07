@@ -12,8 +12,8 @@ Release notes and upgrade instructions are available in the [developer portal](h
 ## Requirements
 *   A  Rubicon Project account.
 *   Placement set-up for Revv for Mobile SDK. Please contact your Rubicon Project Account Manager for the placement information.
-*   XCode 7.0 or higher.
-*   Deployment target of iOS 7.0 or higher.
+*   XCode 8.0 or higher.
+*   Deployment target of iOS 8.0 or higher.
 
 _While the SDK is compliant with iOS6, support for iOS6 has been deprecated. We strongly suggest upgrading your deployment target to iOS7. If your application supports iOS versions lower than iOS6 please make sure you set RFMAdSDK as an optional framework and that you do an OS version check before invoking the SDK methods._
 
